@@ -62,3 +62,9 @@ def plot_model():
     st.pyplot()
 if st.button("plot_model"):
     plot_model()
+
+xx = [i for i in range(100)]
+yy = [i*2 for i in range(100)]
+
+st.pyplot(xx,yy)
+
