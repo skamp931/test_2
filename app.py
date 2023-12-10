@@ -84,4 +84,5 @@ plt.vlines(40 ,0,200, linestyle="dashed" , colors="r")
 plt.text(str_x,str_y,"現在",ha="center")
 #ax.axvline(40,ls="--",color="r")
 st.pyplot()
+st.write(dfdf)
 
