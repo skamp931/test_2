@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import time
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier, plot_tree
 
 input_num = st.number_input("input_a_number",value=0)
 
@@ -47,3 +49,16 @@ if st.button("start"):
         time.sleep(5)
         st.write("end!!")
 
+st.set_option("deprecation.showPyplotGlobalUse",False)
+
+iris = load_iris()
+x,y =iris.data,iris.target
+
+model= DecisionTreeClassifier()
+model.fit(x,y)
+
+def plot_model():
+    plot_tree(model)
+    st.pyplot()
+if st.button("plot_model"):
+    plot_model()
