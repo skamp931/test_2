@@ -41,3 +41,7 @@ if st.button('Say hello'):
 if st.checkbox('Show/Hide'):
     st.write('Some text')
 
+if st.button("start"):
+    with st.spinner("processing...."):
+        st.write("end!!")
+
