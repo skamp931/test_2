@@ -4,6 +4,7 @@ import time
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 
 input_num = st.number_input("input_a_number",value=0)
 
