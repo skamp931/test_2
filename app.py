@@ -68,11 +68,15 @@ if st.button("plot_model"):
 xx = [i for i in range(100)]
 yy = [i*2 for i in range(100)]
 
+str_x = xx[40]
+str_y = yy[40]
+
 fig = plt.stackplot(xx,yy)
 plt.xlabel("年数")
 plt.ylabel("金額")
 plt.title("収支")
 plt.vlines(40 ,0,200, linestyle="dashed" , colors="r")
+plt.text(str_x,str_y,"現在",ha="center")
 #ax.axvline(40,ls="--",color="r")
 st.pyplot()
 
