@@ -3,6 +3,7 @@ import pandas as pd
 import time
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier, plot_tree
+from matplotlib.pyplot as plt
 
 input_num = st.number_input("input_a_number",value=0)
 
@@ -66,5 +67,6 @@ if st.button("plot_model"):
 xx = [i for i in range(100)]
 yy = [i*2 for i in range(100)]
 
-st.pyplot(xx,yy)
+fig = plt.plot(xx,yy)
+st.pyplot()
 
