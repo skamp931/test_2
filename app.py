@@ -69,7 +69,7 @@ xx = [i for i in range(100)]
 yy = [i*2 for i in range(100)]
 
 str_x = xx[40]
-str_y = yy[40]
+str_y = yy[40] + 10
 
 fig = plt.stackplot(xx,yy)
 plt.xlabel("年数")
