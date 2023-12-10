@@ -1,6 +1,6 @@
 import streamlit as st
 
-imput_num = st.number_Input("input_a_number",value=0)
+imput_num = st.number_input("input_a_number",value=0)
 
 result =input_num ** 2
 st.write("Result",result)
