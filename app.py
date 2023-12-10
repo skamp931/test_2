@@ -72,7 +72,7 @@ fig = plt.stackplot(xx,yy)
 plt.xlabel("年数")
 plt.ylabel("金額")
 plt.title("収支")
-plt.vlines(40,ls="--",color="r")
+plt.vlines(40,ls="--",colors="r")
 #ax.axvline(40,ls="--",color="r")
 st.pyplot()
 
