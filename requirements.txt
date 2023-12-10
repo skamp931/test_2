@@ -1,3 +1,2 @@
 streamlit >= 0.0.0
-sklearn-datasets >= 0.0.0
-sklearn-tree >= 0.0.0
+sklearn >= 0.0.0
