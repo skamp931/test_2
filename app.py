@@ -3,7 +3,7 @@ import pandas as pd
 import time
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier, plot_tree
-from matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 input_num = st.number_input("input_a_number",value=0)
 
