@@ -71,6 +71,11 @@ yy = [i*2 for i in range(100)]
 str_x = xx[40]
 str_y = yy[40] + 10
 
+dfdf = pd.DataFrame()
+dfdf["年数"]=xx
+dfdf["金額"]=yy
+dfdf["備考"]
+
 fig = plt.stackplot(xx,yy)
 plt.xlabel("年数")
 plt.ylabel("金額")
