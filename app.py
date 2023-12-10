@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 input_num = st.number_input("input_a_number",value=0)
 
