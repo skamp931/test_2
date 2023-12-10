@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import time
 
 input_num = st.number_input("input_a_number",value=0)
 
@@ -43,5 +44,6 @@ if st.checkbox('Show/Hide'):
 
 if st.button("start"):
     with st.spinner("processing...."):
+        time.sleep(5)
         st.write("end!!")
 
