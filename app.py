@@ -1,4 +1,4 @@
-import streamlit as st
+Eimport streamlit as st
 import pandas as pd
 import time
 from sklearn.datasets import load_iris
@@ -72,7 +72,7 @@ fig = plt.stackplot(xx,yy)
 plt.xlabel("年数")
 plt.ylabel("金額")
 plt.title("収支")
-plt.vlines(40,ls="--",colors="r")
+plt.vlines(40 , linestyle="dashed" , colors="r")
 #ax.axvline(40,ls="--",color="r")
 st.pyplot()
 
