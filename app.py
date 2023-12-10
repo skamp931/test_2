@@ -67,6 +67,6 @@ if st.button("plot_model"):
 xx = [i for i in range(100)]
 yy = [i*2 for i in range(100)]
 
-fig = plt.plot(xx,yy,kind="hist")
+fig = plt.bar(xx,yy,title="life_event")
 st.pyplot()
 
