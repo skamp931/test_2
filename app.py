@@ -16,7 +16,8 @@ df = pd.DataFrame({
     'name': ['Alice', 'Bob'],
     'age': [25, 30],
     'gender': ['female', 'male']
-},index=df["name"])
+})
+df.index(df["name"])
 
 # DataFrameを表示
 st.write(df)
