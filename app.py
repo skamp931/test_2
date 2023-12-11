@@ -23,7 +23,7 @@ df_1 = pd.DataFrame(
 )
 
 st.dataframe(
-    df,
+    df_1,
     column_config={
         "name":"App_name",
         "stars": st.column_config.NumberColumn(
