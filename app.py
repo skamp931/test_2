@@ -14,7 +14,7 @@ input_num = st.number_input("input_a_number",value=0)
 result =input_num ** 2
 st.write("Result",result)
 
-st.write(os.getcwd())
+st.write(os.listdir())
 
 df_1 = pd.DataFrame(
     {
