@@ -29,7 +29,7 @@ st.dataframe(
         "stars": st.column_config.NumberColumn(
             "Github_stars",
             help="number of stars on github",
-            format"%d ☆",
+            format="%d ☆",
         ),
         "url":st.column_config.LinkColumn("app_url"),
         "view_history":st.column_config.LineChartColumn(
