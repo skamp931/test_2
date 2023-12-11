@@ -17,7 +17,7 @@ df_1 = pd.DataFrame(
     {
         "name":["roadmap","Extras","Issues"],
         "url" :["https://roadmap.streamlit.app", "https://extras.streamlit.app", "https://issues.streamlit.app"],
-        "stars":[random.randint(0.1000) for _ in range(3)],
+        "stars":[random.randint(0,1000) for _ in range(3)],
         "views_history":[[random.randint(0,1000) for _ in range(30)] for _ in range(3)],
     }
 )
