@@ -5,12 +5,40 @@ from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
 import japanize_matplotlib
+import random
+
+st.title('streamlit Tutorial')
 
 input_num = st.number_input("input_a_number",value=0)
 result =input_num ** 2
 st.write("Result",result)
 
-st.title('streamlit Tutorial')
+df_1 = pd.DataFrame(
+    {
+        "name":["roadmap","Extras","Issues"],
+        "url" :["https://roadmap.streamlit.app", "https://extras.streamlit.app", "https://issues.streamlit.app"],
+        "stars":[random.randint(0.1000) for _ in range(3)],
+        "views_history":[[random.randint(0,1000) for _ in range(30)] for _ in range(3)],
+    }
+)
+
+st.dataframe(
+    df,
+    column_config={
+        "name":"App_name",
+        "stars": st.column_config.NumberColumn(
+            "Github_stars",
+            help="number of stars on github",
+            format"%d ☆",
+        ),
+        "url":st.column_config.LinkColumn("app_url"),
+        "view_history":st.column_config.LineChartColumn(
+            "view(past 30 year)",y_min=0,y_max=5000
+        ),
+    },
+    hide_index=True,
+)
+
 
 df = pd.DataFrame({
     'name': ['Alice', 'Bob'],
