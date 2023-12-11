@@ -45,10 +45,9 @@ df = pd.DataFrame({
     'age': [25, 30],
     'gender': ['female', 'male']
 })
-df.index(df["name"])
 
 # DataFrameを表示
-st.write(df)
+st.dataframe(df,hide_index=True)
 
 if st.button('Say hello'):
     st.write('Hello World!')
