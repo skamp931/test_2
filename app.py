@@ -6,12 +6,15 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
 import japanize_matplotlib
 import random
+import os
 
 st.title('streamlit Tutorial')
 
 input_num = st.number_input("input_a_number",value=0)
 result =input_num ** 2
 st.write("Result",result)
+
+st.write(os.getcwd())
 
 df_1 = pd.DataFrame(
     {
